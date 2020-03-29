@@ -105,7 +105,11 @@ def game_hash
 }
 end
 
+<<<<<<< HEAD
 def num_points_scored(wanted_name)
+=======
+def points_scored(wanted_name)
+>>>>>>> 996de25adab8247c7a95ba6e946bc7e368ee60c3
   game_hash.each do |place, team|
   team.each do |attributes, data|
     if attributes == :players
@@ -183,16 +187,29 @@ end
 result
 end
 
+<<<<<<< HEAD
 def big_shoe_rebounds
   number_rebounds = 0
+=======
+def biggest_shoe
+  rebounds = 0
+>>>>>>> 996de25adab8247c7a95ba6e946bc7e368ee60c3
   max_shoe = 0
   game_hash.each do |place, team|
   team[:players].each do |player|
   if player[:shoe] > max_shoe
     max_shoe = player[:shoe]
+<<<<<<< HEAD
     number_rebounds = player[:rebounds]
 end
 end
 end
 number_rebounds
+=======
+    rebounds = player[:rebounds]
+end
+end
+end
+rebounds
+>>>>>>> 996de25adab8247c7a95ba6e946bc7e368ee60c3
 end
